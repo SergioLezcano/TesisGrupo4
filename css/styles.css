@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'ALucida Sans', Arial, sans-serif;
+    background: url('../imagenes/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.container {
+    width: 400px;
+    padding: 40px;
+    background-color: #472108;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-image: url('../imagenes/textura-gastada.jpg');
+    background-blend-mode: overlay;  /* Esto ayuda a mezclar la textura con el color de fondo */
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #cc5200;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e67300;
+}
+
+.EMPRESA {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    opacity: 0.7;
+}
+.Version {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.flex-container{
+    position: static;
+    justify-content: center;
+    margin: 5%;
+    padding: 15px 20px;
+}
+
+ #bienvenido{
+    align-items: center;
+    text-align: center;
+    color: blue;
+    margin: auto;
+}
+
+ #alert{
+    background-color: burlywood;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+/* Estilos para la página principal de inicio de sesión parcialpweb*/
+
+/* Estilos para la página de encuesta de datos personales */
+
+/* Estilos para la página de encuesta de gustos musicales */
+
+/* Estilos para la página de encuesta de actividades físicas */
+
+/* Estilos para la página de encuesta de estudios cursados */
+
+/* Estilos para la página de resultados de la encuesta */

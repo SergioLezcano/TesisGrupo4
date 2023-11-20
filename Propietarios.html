@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Propietarios</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos para los botones */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Aquí puedes añadir estilos específicos para esta página si es necesario */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Gestión de Propietarios</h2>
+
+        <!-- Botones de gestión de propietarios -->
+        <div>
+            <button onclick="redirectToVisualizarPropietarios()">Visualizar Propietarios</button>
+            <button onclick="redirectToRegistrarPropietario()">Registrar Propietario</button>
+            <button onclick="redirectToMenu()">Volver al Menú</button>
+        </div>
+    </div>
+
+    <div class="EMPRESA">GIGANTINO</div>
+    <div class="Version">Version 1.0.0</div>
+
+    <script>
+        function redirectToVisualizarPropietarios() {
+            // Redirige a la página de visualización de propietarios
+            window.location.href = 'visualizarPropietarios.html';
+        }
+
+        function redirectToRegistrarPropietario() {
+            // Redirige a la página de registro de propietarios
+            window.location.href = 'registroPropietarios.php';
+        }
+
+        function redirectToMenu() {
+            // Redirige al menú principal
+            window.location.href = 'menu.html'; // Asegúrate de tener el nombre correcto de tu archivo de menú
+        }
+    </script>
+</body>
+</html>
