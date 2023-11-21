@@ -54,6 +54,8 @@
                 <input type="text" name="nombre" placeholder="Ingrese su nombre" ><br><br>
                 <label for="">Apellido</label>
                 <input type="text" name="apellido" placeholder="Ingrese su apellido" ><br><br>
+                <label for="">Correo</label>
+                <input type="email" name="Correo" placeholder="Ingrese su correo" ><br><br>
                 <input type="submit" value="ENVIAR DATOS" name="btnDatos">
                 <a href="index.php">Volver</a>
             </form>
