@@ -40,7 +40,7 @@
 </style>
 
 <body class="container-fluid">
-    <div class="tableDos">
+    <div class="tableDos container-fluid">
         <div class="table-titleDos">DATOS DE PROPIEDADES</div>
         <div class="table-headerDos">TIPO</div>
         <div class="table-headerDos">DIRECCIÓN</div>
@@ -64,7 +64,7 @@
     </div>
     <div>
         <div class="div">
-            <a href="ReporteProp.php">IMPRIMIR FORMULARIO</a>
+            <a href="RepoPropietarios.php">IMPRIMIR FORMULARIO</a>
             <a href="Propiedades.html">VOLVER ATRÁS</a>
         </div>
     </div>

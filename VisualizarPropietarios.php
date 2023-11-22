@@ -1,16 +1,16 @@
 <?php
 
     include("conexionReporte.php");
-    $clientes = "SELECT * FROM clientes";
+    $propietarios = "SELECT * FROM propietarios";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
     <title>REPORTE CLIENTES</title>
-    <link rel="stylesheet" href="css/estiloTabla.css">
+    <link rel="stylesheet" href="css/estiloTabla3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -37,39 +37,35 @@
             align-items: center;
             align-content: center;
         }
-
-
-        /* Aquí puedes añadir estilos específicos para esta página si es necesario */
 </style>
 
 <body class="container-fluid">
-    <div class="container-table container-fluid">
-        <div class="table-title">DATOS DE CLIENTES</div>
-        <div class="table-header">DNI</div>
-        <div class="table-header">NOMBRE</div>
-        <div class="table-header">APELLIDO</div>
-        <div class="table-header">TELEFONO</div>
-        <div class="table-header">E-MAIL</div>
-        <div class="table-header">ACTIVIDAD</div>
+    <div class="container-table3 container-fluid">
+        <div class="table-title3">DATOS DE PROPIETARIOS</div>
+        <div class="table-header3">DNI</div>
+        <div class="table-header3">NOMBRE</div>
+        <div class="table-header3">APELLIDO</div>
+        <div class="table-header3">TELÉFONO</div>
+        <div class="table-header3">E-MAIL</div>
         <?php
 
-            $resultado = mysqli_query($conexion, $clientes);
+            $resultado = mysqli_query($conexion, $propietarios);
 
             while ($row = mysqli_fetch_assoc($resultado)) { ?>
-                <div class="table-items"><?php echo $row['DNI']?></div>
-                <div class="table-items"><?php echo $row['Nombre']?></div>
-                <div class="table-items"><?php echo $row['Apellido']?></div>
-                <div class="table-items"><?php echo $row['Teléfono']?></div>
-                <div class="table-items"><?php echo $row['Email']?></div>
-                <div class="table-items"><?php echo $row['Actividad']?></div>
+                <div class="table-items3"><?php echo $row['DNI']?></div>
+                <div class="table-items3"><?php echo $row['Nombre']?></div>
+                <div class="table-items3"><?php echo $row['Apellido']?></div>
+                <div class="table-items3"><?php echo $row['Telefono']?></div>
+                <div class="table-items3"><?php echo $row['Email']?></div>
+                
             <?php } mysqli_free_result($resultado);
         ?>
         
     </div>
     <div>
         <div class="div">
-            <a href="CodigoReporte.php">IMPRIMIR FORMULARIO</a>
-            <a href="Clientes.html">VOLVER ATRÁS</a>
+            <a href="RepoPropietarios.php">IMPRIMIR FORMULARIO</a>
+            <a href="Propietarios.html">VOLVER ATRÁS</a>
         </div>
     </div>
     
