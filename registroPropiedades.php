@@ -60,6 +60,26 @@
             margin-top: 10px;
             font-size: 14px;
         }
+
+        a {
+            display: inline-block;
+            align-content: center;
+            width: 150px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 30px;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .div{
+            display: inline-block;
+            position: relative;
+            padding: 10px 10px;
+            align-items: center;
+            align-content: center;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +113,7 @@
         </form>
 
         <!-- Botón para imprimir resultados -->
-        <button onclick="imprimirResultados()">Imprimir Resultados</button>
+        <!-- <button onclick="imprimirResultados()">Imprimir Resultados</button> -->
     </div>
 
     <div class="EMPRESA">GIGANTINO</div>

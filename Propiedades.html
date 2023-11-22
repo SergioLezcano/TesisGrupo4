@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         /* Estilos para los botones */
-        button {
+        a {
+            display: inline-block;
+            align-content: center;
+            width: 250px;
+            height: 50px;
             background-color: #4CAF50;
             color: white;
-            padding: 15px 20px;
+            padding-top: 40px;
+            padding-bottom: 10px;
             margin: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            border-radius: 10px;
             font-size: 16px;
+            font-weight: 100px;
+            text-align: center;
         }
-
-        button:hover {
-            background-color: #45a049;
+        .div{
+            display: inline-block;
+            position: relative;
+            padding: 20px 30px;
+            align-items: center;
+            align-content: center;
         }
-
-        /* Aquí puedes añadir estilos específicos para esta página si es necesario */
     </style>
 </head>
 <body>
@@ -30,20 +36,20 @@
         <h2>Gestión de Propiedades</h2>
 
         <!-- Botones de gestión de propiedades -->
-        <div>
-            <button onclick="redirectToVisualizarPropiedades()">Visualizar Propiedades</button>
-            <button onclick="redirectToRegistrarPropiedad()">Registrar Propiedad</button>
-            <button onclick="redirectToMenu()">Volver al Menú</button>
+        <div class="div">
+            <a href="VisualizarProp.php">Visualizar Propiedades</a>
+            <a href="registroPropiedades.php">Registar Propiedades</a>
+            <a href="Menu.html">Volver al Menú</a>
         </div>
     </div>
 
     <div class="EMPRESA">GIGANTINO</div>
     <div class="Version">Version 1.0.0</div>
 
-    <script>
+    <!-- <script>
         function redirectToVisualizarPropiedades() {
             // Redirige a la página de visualización de propiedades
-            window.location.href = 'visualizarPropiedades.html';
+            window.location.href = 'VisualizarProp.php';
         }
 
         function redirectToRegistrarPropiedad() {
@@ -55,6 +61,6 @@
             // Redirige al menú principal
             window.location.href = 'menu.html'; // Asegúrate de tener el nombre correcto de tu archivo de menú
         }
-    </script>
+    </script> -->
 </body>
 </html>
