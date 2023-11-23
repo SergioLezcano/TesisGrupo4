@@ -11,13 +11,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 170vh;
             margin: 0;
         }
 
         .container {
             width: 80%;
-            max-width: 600px;
+            height: auto;
+            max-width: 400px;
             margin: auto;
             text-align: left;
         }
@@ -62,13 +63,15 @@
         }
 
         a {
-            display: inline-block;
+            display: block;
             align-content: center;
-            width: 150px;
+            width: 120px;
+            height: auto;
             background-color: #4CAF50;
             color: white;
-            padding: 30px 30px;
-            margin: 5px;
+            padding: 20px 0 20px 25px;
+            
+            margin-left: -8px;
             border-radius: 10px;
             font-size: 16px;
             font-weight: 400;
@@ -97,16 +100,16 @@
             </select>
 
             <label for="Direccion">Dirección:</label>
-            <input type="text" id="Direccion" name="Direccion" required>
+            <input type="text" id="Direccion" name="Direccion" placeholder="Ingrese dirección" required>
 
             <label for="Localidad">Localidad:</label>
-            <input type="text" id="Localidad" name="Localidad" required>
+            <input type="text" id="Localidad" name="Localidad" placeholder="Ingrese Localidad" required>
 
             <label for="descripcion">Características:</label>
-            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+            <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Breve descripción"></textarea>
             
             <label for="Precio">Precio:</label>
-            <input type="text" id="Precio" name="Precio" required>
+            <input type="text" id="Precio" name="Precio" placeholder="Ingrese Valor" required>
 
             <input type="submit" value="Siguiente" name="btnRegistroProp">
             <div class="div" style="margin-top: 15px; margin-bottom: 10px;"><a href="Menu.html" id="Volver">Volver a Menu</a></div>
