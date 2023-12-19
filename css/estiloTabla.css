@@ -6,10 +6,10 @@ body{
 .container-table{
     width: 90%;
     background: white;
-    margin: 60px auto;
+    margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(5, 15%);
+    grid-template-columns: repeat(7, 10%);
     grid-auto-rows: auto;
     
 }
@@ -19,13 +19,13 @@ body{
     grid-column-end: 7;
     background: teal;
     color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 2.0em;
 }
-
 .table-header, .table-items{
     display: flex;
     justify-content: center;
@@ -39,6 +39,8 @@ body{
 }
 
 .table-items{
-    padding: 5px;
-    font-size: 1.4em;
+    padding: auto;
+    margin: auto;
+    font-size: 1.5em;
 }
+

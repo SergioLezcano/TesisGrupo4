@@ -47,6 +47,7 @@
         <div class="table-header3">APELLIDO</div>
         <div class="table-header3">TELÉFONO</div>
         <div class="table-header3">E-MAIL</div>
+
         <?php
 
             $resultado = mysqli_query($conexion, $propietarios);

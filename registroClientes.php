@@ -57,29 +57,9 @@
             <div class="div" style="margin-top: 15px"><a href="Menu.html" id="Volver">Volver a Menu</a></div>
         </form>
 
-	<!-- <script>
-    function redirectToGustosMusicales(event) {
-        event.preventDefault();
-        var nombre = document.getElementById('nombre').value;
-        var apellido = document.getElementById('apellido').value;
-        var direccion = document.getElementById('direccion').value;
-        var email = document.getElementById('email').value;
-
-        var queryParams = new URLSearchParams({
-            datos: `${nombre} ${apellido}, ${direccion}, ${email}`
-        });
-
-        window.location.href = 'registroPropietarios.html' + '?' + queryParams.toString();
-    }
-    </script> -->
     </div>
     <div class="EMPRESA">GIGANTINO</div>
 	<div class="Version">Version 1.0.0</div>
-    <!-- <script>
-        function redirectToRegistroPropietarios(event) {
-            event.preventDefault();
-            window.location.href = 'registroPropietarios.html';
-        }
-    </script> -->
+    
 </body>
 </html>
