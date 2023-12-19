@@ -20,7 +20,7 @@
 
 <style>
         /* Estilos para los botones */
-        a {
+        .btn_submit {
             display: inline-block;
             align-content: center;
             width: 250px;
@@ -34,20 +34,13 @@
             font-weight: 100px;
             text-align: center;
         }
-        .div{
-            display: inline-block;
-            position: relative;
-            padding: 0;
-            align-items: center;
-            align-content: center;
-        }
 
 
 
 </style>
 
 <body class="container-fluid">
-    <form action="">
+    <form action="ActualizarClientes.php" method="post" class="row col-12 container-table container-fluid">
         <div class="row col-12 container-table container-fluid">
             <div class="table-title col-12">DATOS DE CLIENTES</div>
             <div class="table-header col-2">DNI</div>
@@ -61,22 +54,24 @@
             $resultado = mysqli_query($conexion, $ModificarReg);
 
             while ($row = mysqli_fetch_assoc($resultado)) { ?>
-                <div class="table-items col-2"><?php echo $row['DNI'];?></div>
-                <div class="table-items col-2"><?php echo $row['Nombre'];?></div>
-                <div class="table-items col-2"><?php echo $row['Apellido'];?></div>
-                <div class="table-items col-2"><?php echo $row['Teléfono'];?></div>
-                <div class="table-items col-2"><?php echo $row['Email'];?></div>
-                <div class="table-items col-2"><?php echo $row['Actividad'];?></div>
+                <input type="hidden" class="table-items col-2" value="<?php echo $row['idCliente'];?>" name="id">
+                <input type="text" class="table-items col-2" value="<?php echo $row['DNI'];?>" name="DNI">
+                <input type="text" class="table-items col-2" value="<?php echo $row['Nombre'];?>" name="nombre">
+                <input type="text" class="table-items col-2" value="<?php echo $row['Apellido'];?>" name="apellido">
+                <input type="text" class="table-items col-2" value="<?php echo $row['Teléfono'];?>" name="telefono">
+                <input type="text" class="table-items col-2" value="<?php echo $row['Email'];?>" name="email">
+                <input type="text" class="table-items col-2" value="<?php echo $row['Actividad'];?>" name="actividad">
                 <?php } mysqli_free_result($resultado);?>
+                <input type="submit" value="ACTUALIZAR" class="btn_submit">
         
         </div>
 
         <script src="Confirmacion.js"></script>
-        <div class="container-fluid">
-            <div class="div">
-                <a href="Clientes.html">VOLVER ATRÁS</a>
+        <!-- <div class="container-fluid">
+            <div>
+                <input type="submit" value="ACTUALIZAR" class="btn_submit">
             </div>
-        </div>
+        </div> -->
     </form>
     
     
