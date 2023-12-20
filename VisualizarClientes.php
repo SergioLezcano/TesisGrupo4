@@ -64,7 +64,7 @@
             <div class="table-items col-2"><?php echo $row['Email'];?></div>
             <div class="table-items col-2"><?php echo $row['Actividad'];?></div>
             <div class="table-items col-2">
-                <a href="ModificarCliente.php?id=<?php echo $row['idCliente'];?>" class="table_items_link" style="width: 150px; height: auto; margin: 10px; background-color: #000;">Modificar</a>
+                <a href="ModificarCliente.php?id=<?php echo $row['idCliente'];?>" class="table_items_linkActualizar" style="width: 150px; height: auto; margin: 10px; background-color: #000;">Modificar</a>
                 <a href="EliminarCliente.php?id=<?php echo $row['idCliente'];?>" class="table_items_linkEliminar" style="width: 150px; height: auto; margin: 10px; background-color: #000">Eliminar</a>
             </div>
             <?php } mysqli_free_result($resultado);?>
